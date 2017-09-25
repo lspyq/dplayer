@@ -33,7 +33,22 @@
     var vurl = document.getElementById('vurl').value;
     document.getElementById('btn').onclick=function(){
       vurl = document.getElementById('vurl').value;
-      console.log(dp);
+      dp({
+    container: document.getElementById('dplayer'),
+    screenshot: true,
+    video: {
+        url: vurl,
+        pic: 'demo.jpg',
+        thumbnails: 'thumbnails.jpg'
+    },
+    subtitle: {
+        url: 'webvtt.vtt'
+    },
+    danmaku: {
+        id: 'demo',
+        api: 'https://api.prprpr.me/dplayer/'
+    }
+});
     }
 
   </script>
