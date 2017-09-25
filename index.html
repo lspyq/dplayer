@@ -18,7 +18,7 @@
     var vurl = document.getElementById('vurl').value;
     document.getElementById('btn').onclick=function(){
       vurl = document.getElementById('vurl').value;
-      dp({
+      var dp = new DPlayer({
     container: document.getElementById('dplayer'),
     screenshot: true,
     video: {
