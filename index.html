@@ -12,11 +12,7 @@
   <div id="dplayer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.15.1/DPlayer.min.js"></script>
   <script>
-    var vurl = document.getElementById('vurl').value;
-    document.getElementById('btn').onclick=function(){
-      vurl = document.getElementById('vurl').value;
-    }
-
+    
   var dp = new DPlayer({
     container: document.getElementById('dplayer'),
     screenshot: true,
@@ -34,6 +30,12 @@
     }
 });
     
+    var vurl = document.getElementById('vurl').value;
+    document.getElementById('btn').onclick=function(){
+      vurl = document.getElementById('vurl').value;
+      console.log(dp);
+    }
+
   </script>
   </body>
 </html>
