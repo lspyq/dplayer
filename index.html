@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>DPlayer</title>
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.15.1/DPlayer.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dplayer/1.15.1/DPlayer.min.js"></script>
+  </head>
+  <body>
+  <div id="dplayer"></div>
+  <script>
+  
+    var dplayer = new DPlayer({
+      element: document.getElementById('dplayer'),
+      autoplay: false,
+      theme: '#FADFA3',
+      loop: false,
+      screenshot: true, //截屏
+      hotkey: false,
+      logo: '/public/assets/images/server/favicon.ico',
+      video: {  //视频源 包含不同分辨率源
+          quality: [{
+              name: '普清',
+              url: 'http://59.108.137.14/65666E0ED34581E6B96293A18/0300010F005430BCBA49631468DEFEC61C5678-3A78-37BA-1971-21A0D4EEA0E7.flv'
+          },{
+              name: '高清',
+              url: url2
+          }, {
+              name: '超清',
+              url: url3
+          }],
+          defaultQuality: 0,
+          pic: '',
+          type: 'auto'
+      }
+  });
+
+  
+  </script>
+  </body>
+</html>
